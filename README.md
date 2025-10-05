@@ -14,7 +14,7 @@ Simple responsive static website for Akshay Services (B2B Industrial Solutions).
 ## Deploy to GitHub Pages
 1. Create a GitHub repo, push the files.
 2. In GitHub repo settings -> Pages -> choose `main` branch `/ (root)` and save.
-3. Site will be available at `https://<username>.github.io/<repo-name>/`
+3. Site will be available at 'https://yatharth-singh-007.github.io/Akshay-Services-Website/`
 
 ## Notes
 - Contact form is a demo. For real submissions, integrate Formspree / EmailJS or backend.
