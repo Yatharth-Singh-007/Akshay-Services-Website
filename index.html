@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akshay Services — Industrial Solutions | PAN-India</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (for quick project / classroom use) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind config (optional small tweaks) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#007BFF',
+            akgray: '#F3F4F6',
+            akdark: '#0F172A',
+          },
+          fontFamily: {
+            body: ['"Open Sans"', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 6px 20px rgba(2,6,23,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Akshay Services — B2B Industrial Solutions Provider. Electricals, Hydraulics, Pneumatics, Automation, MRO supplies. PAN-India." />
+</head>
+<body class="font-body text-gray-800 bg-white">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="images/logo.png" alt="Akshay Services logo" class="h-10 w-auto object-contain" onerror="this.src='images/placeholder.png'">
+          <span class="text-xl font-heading text-primary">Akshay Services</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="#home" class="hover:text-primary">Home</a>
+          <a href="#products" class="hover:text-primary">Products</a>
+          <a href="#industries" class="hover:text-primary">Industries</a>
+          <a href="#projects" class="hover:text-primary">Gallery</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+          <a href="https://akshayservices.in" target="_blank" class="ml-2 inline-block px-4 py-2 rounded-md bg-primary text-white text-sm hover:opacity-95">Visit Site</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobileBtn" aria-label="Open menu" class="p-2 rounded-md border" onclick="toggleMobile()">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden bg-white border-t">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#home" class="block">Home</a>
+        <a href="#products" class="block">Products</a>
+        <a href="#industries" class="block">Industries</a>
+        <a href="#projects" class="block">Gallery</a>
+        <a href="#contact" class="block">Contact</a>
+        <a href="https://akshayservices.in" target="_blank" class="block font-medium text-primary">Visit Company Site</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="pt-8">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-akdark leading-tight">
+            Akshay Services — Reliable Industrial Supplies & Solutions
+          </h1>
+          <p class="mt-4 text-gray-600 max-w-xl">
+            PAN-India provider of electrical, hydraulics, pneumatics, automation, MRO and machinery supplies — focused on sustainability and operational excellence.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#contact" class="px-5 py-3 rounded-md bg-primary text-white font-medium shadow-sm hover:opacity-95">Request a Quote</a>
+            <a href="#products" class="px-5 py-3 rounded-md border text-primary hover:bg-primary hover:text-white transition">View Products</a>
+          </div>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+            <li>📞 +91 70308 78827</li>
+            <li>📧 info@akshayservices.in</li>
+            <li>🌐 PAN-India Supply</li>
+            <li>✅ Trusted B2B Solutions</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="rounded-xl overflow-hidden shadow-soft bg-akgray p-4">
+            <img src="images/hero.jpg" alt="Industrial supplies" class="w-full h-60 object-cover rounded-md" onerror="this.src='images/placeholder.png'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="mt-12 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-heading font-semibold">Product Categories</h2>
+          <p class="text-sm text-gray-500">Browse categories for quick access</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card -->
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">Electricals</h3>
+            <p class="mt-2 text-sm text-gray-600">Wires, switchgear, panels, connectors, distribution systems.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('Electricals')">Request Quote →</button>
+            </div>
+          </article>
+
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">Hydraulics</h3>
+            <p class="mt-2 text-sm text-gray-600">Pumps, valves, fittings, cylinders and seals.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('Hydraulics')">Request Quote →</button>
+            </div>
+          </article>
+
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">Pneumatics</h3>
+            <p class="mt-2 text-sm text-gray-600">Air compressors, tubing, regulators, actuators.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('Pneumatics')">Request Quote →</button>
+            </div>
+          </article>
+
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">Automation</h3>
+            <p class="mt-2 text-sm text-gray-600">Sensors, PLCs, drives, controllers and control panels.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('Automation')">Request Quote →</button>
+            </div>
+          </article>
+
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">MRO Supplies</h3>
+            <p class="mt-2 text-sm text-gray-600">Tools, fasteners, abrasives, consumables, safety gear.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('MRO')">Request Quote →</button>
+            </div>
+          </article>
+
+          <article class="p-5 bg-white rounded-lg border hover:shadow-soft transition">
+            <h3 class="font-medium text-lg">Raw Materials & Machinery</h3>
+            <p class="mt-2 text-sm text-gray-600">Industrial metals, polymers, fabrication supplies and machines.</p>
+            <div class="mt-4">
+              <button class="text-primary text-sm font-medium" onclick="openCategory('Machinery')">Request Quote →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <h2 class="text-2xl font-heading mb-4">Industries Served</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-3 bg-akgray rounded-lg text-center">Automotive</div>
+        <div class="p-3 bg-akgray rounded-lg text-center">Manufacturing</div>
+        <div class="p-3 bg-akgray rounded-lg text-center">Electrical</div>
+        <div class="p-3 bg-akgray rounded-lg text-center">OEMs</div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white border-t">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <h2 class="text-2xl font-heading mb-6">What Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <blockquote class="p-5 bg-akgray rounded-lg">"Reliable supplier, timely delivery and great support." — <strong>ABC Manufacturing</strong></blockquote>
+          <blockquote class="p-5 bg-akgray rounded-lg">"Excellent product quality and post-sales service." — <strong>XYZ Engineering</strong></blockquote>
+          <blockquote class="p-5 bg-akgray rounded-lg">"Competitive pricing and easy procurement process." — <strong>PQR Automations</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects / Gallery -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <h2 class="text-2xl font-heading mb-6">Gallery / Recent Projects</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <img src="images/placeholder.png" alt="Project 1" class="w-full h-40 object-cover rounded-md cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="images/placeholder.png" alt="Project 2" class="w-full h-40 object-cover rounded-md cursor-pointer" onclick="openLightbox(this.src)">
+        <img src="images/placeholder.png" alt="Project 3" class="w-full h-40 object-cover rounded-md cursor-pointer" onclick="openLightbox(this.src)">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-akgray py-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-heading mb-4">Get in Touch</h2>
+          <p class="text-gray-700 mb-4">Send an inquiry or request a quotation — we will respond promptly.</p>
+
+          <form id="contactForm" class="space-y-4 bg-white p-6 rounded-lg shadow-soft" onsubmit="handleForm(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <input required name="name" id="name" placeholder="Your name" class="border px-3 py-2 rounded-md w-full" />
+              <input required name="company" id="company" placeholder="Company" class="border px-3 py-2 rounded-md w-full" />
+            </div>
+            <input required type="email" name="email" id="email" placeholder="Email" class="border px-3 py-2 rounded-md w-full" />
+            <input name="phone" id="phone" placeholder="Phone" class="border px-3 py-2 rounded-md w-full" />
+            <select name="category" id="category" class="border px-3 py-2 rounded-md w-full">
+              <option value="">Select category</option>
+              <option>Electricals</option>
+              <option>Hydraulics</option>
+              <option>Pneumatics</option>
+              <option>Automation</option>
+              <option>MRO</option>
+            </select>
+            <textarea name="message" id="message" rows="4" placeholder="Message / Requirements" class="border px-3 py-2 rounded-md w-full"></textarea>
+
+            <div class="flex items-center gap-3">
+              <!-- For real submissions integrate Formspree / EmailJS / backend. For demo we show a success message -->
+              <button type="submit" class="px-5 py-2 bg-primary text-white rounded-md">Submit Inquiry</button>
+              <button type="button" onclick="clearForm()" class="px-4 py-2 border rounded-md">Clear</button>
+            </div>
+
+            <div id="formMsg" class="text-sm mt-2"></div>
+          </form>
+        </div>
+
+        <div>
+          <h3 class="font-heading font-semibold mb-2">Contact Details</h3>
+          <p class="text-sm text-gray-700">B 317 3rd Floor Park Town Commercial Complex Aditya World City NH 24, Ghaziabad 201002, India</p>
+          <ul class="mt-4 text-sm text-gray-700 space-y-1">
+            <li>📞 +91 7030878827</li>
+            <li>📧 info@akshayservices.in</li>
+            <li>🌐 <a href="https://akshayservices.in" class="text-primary underline" target="_blank">akshayservices.in</a></li>
+          </ul>
+
+          <div class="mt-6">
+            <h4 class="font-medium mb-2">Find us</h4>
+            <!-- Example Google maps iframe (replace src with company map if needed) -->
+            <div class="w-full h-48 bg-white rounded-md overflow-hidden border">
+              <iframe title="Akshay Services location" src="https://www.google.com/maps?q=Ghaziabad+NH24&output=embed" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <h4 class="font-medium mb-2">Follow</h4>
+            <div class="flex gap-3">
+              <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-primary">LinkedIn</a>
+              <a href="#" aria-label="Instagram" class="text-gray-600 hover:text-primary">Instagram</a>
+              <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-primary">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-sm text-gray-700">© <span id="year"></span> Akshay Services — All rights reserved.</div>
+        <div class="text-sm text-gray-500">Designed by Yatharth Singh</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox modal (hidden) -->
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 hidden z-50">
+    <button class="absolute top-4 right-4 text-white text-2xl" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Preview" class="max-h-full max-w-full rounded-md shadow-lg">
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/917030878827" target="_blank" class="fixed right-4 bottom-4 z-40">
+    <div class="bg-green-500 rounded-full p-3 shadow-lg text-white">💬</div>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
