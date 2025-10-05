@@ -1,0 +1,18 @@
+/* css/style.css */
+
+/* Basic focus outline for accessibility */
+:focus {
+  outline: 3px solid rgba(0,123,255,0.18);
+  outline-offset: 3px;
+}
+
+/* Lightbox image rounded corners on small screens */
+#lightboxImg {
+  border-radius: 8px;
+}
+
+/* Small utility for card hover (works with Tailwind) */
+.card-hover:hover {
+  transform: translateY(-4px);
+  transition: transform 200ms ease;
+}
